@@ -1198,8 +1198,8 @@ def fig9_rolling_alpha(bab, ff3):
         try:
             model = sm.OLS(y, X).fit(cov_type="HAC",
                                      cov_kwds={"maxlags": NW_LAGS})
-            alphas.append(model.params.iloc[0] * 1200)
-            alpha_se.append(model.bse.iloc[0] * 1200)
+            alphas.append(model.params[0] * 1200)
+            alpha_se.append(model.bse[0] * 1200)
             dates_out.append(chunk["month"].iloc[-1].to_timestamp())
         except Exception:
             continue
