@@ -56,4 +56,4 @@ The AQR file goes into `data/` as `Betting_Against_Beta_Equity_Factors_Monthly.x
 
 ## AI Usage
 
-I used AI tools for coding assistance (syntax, debugging). The research design, statistical specifications, and interpretation of results are entirely my own. No AI tools were used in writing the thesis.
+I used AI tools for coding assistance (syntax, debugging). The whole elaboration, methodological approach, implementation, and interpretation of results are entirely my own. 
