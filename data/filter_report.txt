@@ -1,0 +1,69 @@
+Filter report, 2026-03-16 17:34
+
+Filters:
+  F1  median_price ≥ $5           penny stock exclusion
+  F2  |β| ≤ 5                     estimation error screen
+  F3  exchange ∈ {NYSE,AMEX,NQ}   major US exchanges
+  F4  mean_volume ≥ 1,000/day     liquidity floor
+  F5  ≥ 36 months panel history   seasoning requirement
+
+Before filters
+  Stock-months:     1,813,074
+  Unique tickers:      14,016
+  Month range:     1987-12 → 2025-12
+
+  Cross-section per month:
+    Mean:       3967    Median:     5291
+    Min:         589  (1987-12)
+    Max:       5,818  (2010-12)
+
+  Beta:  mean=-109.5648  std=33959.4712
+    [P1, P99]: [0.211, 2.976]
+
+  Price:  mean=$428.85  median=$15.16
+  Volume: mean=   1,638,937  median=     128,150
+
+  Exchange breakdown:
+    NASDAQ                           931,555  (51.4%)
+    NYSE                             801,104  (44.2%)
+    NYSE MKT                          75,440  (4.2%)
+    AMEX                               3,435  (0.2%)
+    NYSE ARCA                          1,540  (0.1%)
+
+  Decile feasibility: min stocks/month = 589 ✓
+
+
+After filters
+  Stock-months:       984,913
+  Unique tickers:       7,946
+  Month range:     1990-12 → 2025-12
+
+  Cross-section per month:
+    Mean:       2339    Median:     2980
+    Min:         482  (1990-12)
+    Max:       3,554  (2014-03)
+
+  Beta:  mean=0.9881  std=0.3537
+    [P1, P99]: [0.406, 2.001]
+
+  Price:  mean=$360.56  median=$25.65
+  Volume: mean=   1,959,666  median=     301,462
+
+  Exchange breakdown:
+    NYSE                             531,276  (53.9%)
+    NASDAQ                           429,549  (43.6%)
+    NYSE MKT                          23,165  (2.4%)
+    NYSE ARCA                            741  (0.1%)
+    AMEX                                 182  (0.0%)
+
+  Decile feasibility: min stocks/month = 482 ✓
+
+
+Comparison
+                                     Before      After
+  Stock-months                    1,813,074    984,913
+  Tickers                            14,016      7,946
+  Beta mean                       -109.5648     0.9881
+  Beta std                       33959.4712     0.3537
+  Avg stocks/month                     3967       2339
+  Min stocks/month                      589        482

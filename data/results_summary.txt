@@ -1,0 +1,80 @@
+Results Summary
+Sample: 2000-01 to 2020-12
+Generated: 2026-03-17 09:37
+
+BAB factor statistics
+  Months:             252
+  Period:             2000-01 to 2020-12
+  Mean (monthly):     +0.0084
+  Mean (annual):      +10.11%
+  Std (monthly):      0.0365
+  Std (annual):       12.64%
+  Sharpe (ann.):      0.800
+  Sortino (ann.):     0.779
+  Calmar:             0.395
+  Max drawdown:       -25.59%
+  Skewness:           -0.094
+  Kurtosis:           3.024
+  Min:                -0.1275
+  Max:                0.1503
+  % positive months:  64.3%
+  Avg beta_L:         0.631
+  Avg beta_H:         1.309
+  Avg stocks/month:   2825
+
+Proposition 1: flat SML (Eq. 22)
+    D  alpha(mo)    t(a)  beta_CAPM    E[re]    R2  R2adj
+
+  D1     0.0069***   4.34      0.356   0.0089  0.462 0.459
+  D2     0.0075***   4.65      0.538   0.0104  0.620 0.618
+  D3     0.0069***   3.89      0.646   0.0104  0.649 0.647
+  D4     0.0058***   3.12      0.759   0.0100  0.686 0.685
+  D5     0.0050**    2.39      0.874   0.0098  0.711 0.709
+  D6     0.0045*     1.94      0.968   0.0098  0.698 0.696
+  D7     0.0027      1.17      1.073   0.0086  0.732 0.731
+  D8     0.0027      1.09      1.213   0.0094  0.742 0.741
+  D9     0.0014      0.56      1.439   0.0094  0.758 0.757
+  D10     0.0007      0.19      1.940   0.0114  0.730 0.729
+
+  D1-D10 spread: 0.0063 (7.52% p.a.)
+
+Proposition 2: BAB regressions (Eq. 23-27)
+
+  CAPM (23):
+    alpha = 0.0108***  (t = 4.59)
+    alpha annualized = +12.98%
+    R2 = 0.295, R2adj = 0.292, N = 252
+
+  FF3 (24):
+    alpha = 0.0109***  (t = 5.16)
+    alpha annualized = +13.11%
+    R2 = 0.328, R2adj = 0.320, N = 252
+
+  Carhart (25):
+    alpha = 0.0098***  (t = 4.73)
+    alpha annualized = +11.78%
+    R2 = 0.448, R2adj = 0.439, N = 252
+
+  q-fac (26):
+    alpha = 0.0083***  (t = 4.08)
+    alpha annualized = +9.99%
+    R2 = 0.409, R2adj = 0.399, N = 252
+
+  FF5 (27):
+    alpha = 0.0079***  (t = 3.48)
+    alpha annualized = +9.45%
+    R2 = 0.393, R2adj = 0.381, N = 252
+
+Proposition 3: funding conditions (Eq. 28)
+  r^BAB = a + b1*dTED + b2*TED(t-1) + e
+  b1(dTED) = -0.0137  (t = -1.23)
+  b2(TED)  = -0.0141***  (t = -3.52)
+  R2 = 0.022, N = 252
+
+  Univariate robustness:
+    ΔTED only:  b=-0.0065  (t = -0.60), R2 = 0.001
+    TED level:  b=-0.0123***  (t = -3.26), R2 = 0.017
+    corr(ΔTED, TED_{t-1}) = -0.261
+
+Newey-West HAC standard errors (L=6) throughout.
+* p<0.10  ** p<0.05  *** p<0.01
